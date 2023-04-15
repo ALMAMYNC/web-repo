@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demo-angular';
+  col:string = "red";
+  change(){
+    if(this.col=='red')
+      this.col="blue";
+    else 
+     this.col="red";
+  }
 }
